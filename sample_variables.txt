@@ -1,0 +1,33 @@
+### provider.tf
+variable "region" {
+  default = "ap-southeast-1"
+}
+
+variable "access_key" {
+  default = "YOUR_AWS_ACCESS_KEY"
+}
+
+variable "secret_key" {
+  default = "YOUR_AWS_SECRET_KEY"
+}
+
+### vpc.tf
+variable "vpc_cidr" {
+  default = "172.32.0.0/16"
+}
+
+variable "subnets_cidr_1a" {
+  default = "172.32.0.0/24"
+}
+
+variable "subnets_cidr_1b" {
+  default = "172.32.1.0/24"
+}
+
+variable "azs_1a" {
+  default = "ap-southeast-1a"
+}
+
+variable "azs_1b" {
+  default = "ap-southeast-1b"
+}
