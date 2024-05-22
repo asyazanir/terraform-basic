@@ -2,11 +2,11 @@
 ## aws_vpc.vpc
 ## aws_subnet.subnet_public_1a
 ## aws_subnet.subnet_public_1b
-## aws_route_table.public
 ## aws_main_route_table_association.public
 ## aws_route_table_association.subnet_public_1a
 ## aws_route_table_association.subnet_public_1b
 ## aws_internet_gateway.igw
+## aws_route_table.public
 ## aws_default_network_acl.acl
 
 resource "aws_vpc" "vpc" {
