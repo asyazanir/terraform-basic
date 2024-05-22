@@ -1,4 +1,4 @@
-### provider.tf
+######### provider.tf
 variable "region" {
   default = "ap-southeast-1"
 }
@@ -11,7 +11,7 @@ variable "secret_key" {
   default = "YOUR_AWS_SECRET_KEY"
 }
 
-### vpc.tf
+######### vpc.tf
 variable "vpc_cidr" {
   default = "172.32.0.0/16"
 }
@@ -31,3 +31,47 @@ variable "azs_1a" {
 variable "azs_1b" {
   default = "ap-southeast-1b"
 }
+
+######### ec2_keypair.tf 
+variable "key_name" {
+  default = "keypair"
+}
+variable "public_key" {
+  default = "YOUR_SSH_PUBLIC_KEY"
+}
+
+######### ec2.tf
+variable "ami" {
+  default = "ami-003c463c8207b4dfa"
+}
+
+variable "instance_type" {
+  default = "m6a.large"
+}
+
+variable "volume_size" {
+  default = "16"
+}
+
+variable "volume_type" {
+  default = "gp3"
+}
+
+######### ec2_sg.tf
+variable "security_group_name" {
+  default = "Security Group"
+}
+
+variable "security_group_description" {
+  default = "This is security group"
+}
+
+variable "egressCIDRblock" {
+  default = ["0.0.0.0/0"]
+}
+
+variable "ingressCIDRblock" {
+  default = ["0.0.0.0/0"]
+}
+
+
