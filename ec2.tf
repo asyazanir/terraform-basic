@@ -1,5 +1,5 @@
 ## ec2.tf
-## ├─ aws_instance.ec2
+## aws_instance.ec2
 
 resource "aws_instance" "ec2" {
   ami           = var.ami
