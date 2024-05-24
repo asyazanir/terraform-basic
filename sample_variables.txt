@@ -74,4 +74,9 @@ variable "ingressCIDRblock" {
   default = ["0.0.0.0/0"]
 }
 
+######### ec2_cloudwatch.tf
+variable "cloudwatch_cpu" {
+  default = "EC2-CPU"
+}
+
 
